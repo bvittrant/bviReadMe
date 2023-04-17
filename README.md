@@ -233,6 +233,7 @@ cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 
 ### Initializz github repo
 
+- Check if your take token are up to date or you'll have problem prompt ask name and pwd to connect 
 - First create the empty repo on your account without nothint inside then 
 - All in one command:  ```git init && git commit -m "first commit" && git branch -M main && git remote add origin https://github.com/YOUR_NAME/YOUR_REPO_NAME.git && git push -u origin main```
 
