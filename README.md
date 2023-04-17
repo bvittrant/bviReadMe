@@ -1,4 +1,4 @@
-# General informations : bvipackpy
+# General informations : bviReadMe
 
 Usual functions things for everythings !
 
@@ -120,21 +120,21 @@ convert_to_utc = function(vector){
 
 convert_to_timezone <- function(dataframe, timezone_col, datetime_col) {
   
-  # <> (extract the timezone and datetime columns from the dataframe)
+  # Extract the timezone and datetime columns from the dataframe)
   
   timezone <- dataframe[[timezone_col]]
   
   vec_datetime_col <- dataframe[[datetime_col]]
 
-  # <> (convert the datetime value to POSIXct format
+  # convert the datetime value to POSIXct format
   
   utc_datetime <- convert_to_utc(vec_datetime_col)
   
-  # <> (create an empty vector to store the converted datetime values)
+  # create an empty vector to store the converted datetime values
   
   datetime_in_timezone <- rep("", nrow(dataframe))
   
-  # <> (loop over the rows of the dataframe and convert each datetime value to the corresponding timezone)
+  # loop over the rows of the dataframe and convert each datetime value to the corresponding timezone
   
   for (i in seq_along(timezone)) {
   
@@ -142,7 +142,7 @@ convert_to_timezone <- function(dataframe, timezone_col, datetime_col) {
     
   }
 
-  # <> (return the vector of datetime values in the specified timezone)
+  # return the vector of datetime values in the specified timezone
   
   return(datetime_in_timezone)
   
@@ -154,17 +154,17 @@ convert_to_timezone <- function(dataframe, timezone_col, datetime_col) {
 
 date_diff_seconds <- function(date1, date2) {
 
-  # <> (convert both dates to POSIXct format)
+  # convert both dates to POSIXct format
   
   date1_posix <- as.POSIXct(date1)
   
   date2_posix <- as.POSIXct(date2)
   
-  # <> (calculate the difference in seconds)
+  # calculate the difference in seconds
   
   diff_seconds <- difftime(date2_posix, date1_posix, units = "secs")
   
-  # <> (return the result as a numeric value)
+  # return the result as a numeric value
   
   return(as.numeric(diff_seconds))
   
@@ -176,19 +176,19 @@ date_diff_seconds <- function(date1, date2) {
 
 convert_minutes_to_hour <- function(minutes) {
 
-  # <> (Convert minutes to hours)
+  # Convert minutes to hours
   
   hours <- floor(minutes / 60)
   
-  # <> (Extract the remaining minutes)
+  # Extract the remaining minutes
   
   remaining_minutes <- minutes %% 60
   
-  # <> (Create a formatted string for the hour of the day)
+  # Create a formatted string for the hour of the day
   
   hour_string <- sprintf("%02d:%02d", hours, remaining_minutes)
   
-  # <> (Return the hour string)
+  # Return the hour string
   
   return(hour_string)
   
@@ -256,4 +256,4 @@ cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 ### Command line
 
 - start : sudo openvpn path/to/conf.ovpn
-# bviReadMe
+
