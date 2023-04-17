@@ -213,7 +213,7 @@ convert_minutes_to_hour <- function(minutes) {
 - [Offcial website](https://jokergoo.github.io/ComplexHeatmap-reference/book/)
 - [interactive complexe heatmap !](https://github.com/jokergoo/InteractiveComplexHeatmap)
 
-# Git
+# Git lab/hub
 
 ## Command line
 
@@ -222,7 +222,7 @@ convert_minutes_to_hour <- function(minutes) {
 pip install cookiecutter
 cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 
-### initialize git repo
+### initialize gitlab repo
 
 - initialisation git : ```git init```
 - Create “origin” remote project : ```git remote add origin git@gitlab.corp.withings.com:your_master_dir/your_dir/my_repo_name```
@@ -230,6 +230,11 @@ cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 - Track lfs system if needed : ```git lfs track "data/**"```
 - add all dir & file at . in the project : ```git add .```
 - commit and push : ```git commit -m "Initial commit" && git push -u origin master```
+
+### Initializz github repo
+
+- First create the empty repo on your account without nothint inside then 
+- All in one command:  ```git init && git commit -m "first commit" && git branch -M main && git remote add origin https://github.com/YOUR_NAME/YOUR_REPO_NAME.git && git push -u origin main```
 
 ### All in one command
 
