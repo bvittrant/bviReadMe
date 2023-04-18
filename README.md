@@ -2,9 +2,17 @@
 
 Usual functions things for everythings !
 
-# Useful links
+# Anything anywant anywhere
 
-- [Data team handbook](https://about.gitlab.com/handbook/business-technology/data-team/)
+## Work organisation
+
+- [Data team handbook (jobs and organisation)](https://about.gitlab.com/handbook/business-technology/data-team/)
+
+# Markdown
+
+## Tips
+
+- [10 awesomes r markdown tricks](https://towardsdatascience.com/ten-awesome-r-markdown-tricks-56ef6d41098)
 
 # IDE
 
