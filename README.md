@@ -45,7 +45,8 @@ Usual functions things for everythings !
 - Collapse All — Alt+O
 - Expand All — Shift+Alt+O
 
-# Python 
+# Python
+![Alt text](src/img/python_img.svg)
 
 ## How to import with direct path
 
@@ -62,8 +63,11 @@ from name import *
 ```
 
 # R
+![Alt text](src/img/R_img.svg)
 
 ## Plot
+
+### Double axis
 
 Plot examples - add double x axis
 
@@ -78,6 +82,11 @@ ggplot(d_eda_summary, aes(x=minute_floor)) +
   theme(legend.position = "top") +
   discrete_ggsci_npg
 ```
+
+### Complexe heatmap
+
+- [Offcial website](https://jokergoo.github.io/ComplexHeatmap-reference/book/)
+- [interactive complexe heatmap !](https://github.com/jokergoo/InteractiveComplexHeatmap)
 
 ## Actions
 
@@ -174,21 +183,13 @@ convert_minutes_to_hour <- function(minutes) {
 ```
 
 # SQL
+![Alt text](src/img/SQL_img.svg)
 
 ## Join
 
 ### Wikimedia references
 
 [Link to join explanations](https://commons.wikimedia.org/wiki/File%3ASQL_Joins.svg)
-
-# Heatmap
-
-## R
-
-### Complexe heatmap
-
-- [Offcial website](https://jokergoo.github.io/ComplexHeatmap-reference/book/)
-- [interactive complexe heatmap !](https://github.com/jokergoo/InteractiveComplexHeatmap)
 
 # Git lab/hub
 
