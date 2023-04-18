@@ -1,0 +1,80 @@
+---
+title: "Template"
+author: "Benjamin Vittrant"
+format: 
+  html: 
+   toc: true
+   code-fold: true
+   number-sections: true
+   number-depth: 2
+   anchor-sections: true
+   smooth-scroll: true
+editor: visual
+license: "Copyright Benjamin Vittrant, 2022. All Rights Reserved. The diffusion, reuse or distribution of this document is not allowed."
+bibliography: references.bib
+---
+
+# Introduction
+
+## Context
+
+## Objectives
+
+# Code set-up
+
+## Clean
+
+```{r, message=F, warning=F}
+rm(list = ls(all.names = TRUE))
+```
+
+## Packages
+
+```{r, message=F, warning=F}
+library(ggsci)
+```
+
+## Colors
+
+We define color palette from the *ggsci* [@xiao__aut_ggsci_2023] that recreate color from scientific publication.
+
+```{r}
+discrete_ggsci_npg = list(scale_color_npg(), scale_fill_npg())
+continuous_ggsci_npg = list(scale_fill_material("light-blue"))
+palette = "Paired"
+```
+
+# Data collection and preprocessing
+
+# Feature engineering
+
+# Exploration
+
+## Distribution
+
+## Summary statistics
+
+For the summary statistics I used the package from *rstatix* [@kassambara_rstatix_2023] function.
+
+## Correlation
+
+For the correlation analysis I used the pacakge *polycor* [@fox_polycor_2022] which is based on polychoric and polyserial correlation.
+
+## Mutual information
+
+## Heatmap
+
+# Model selection and training
+
+# Model evaluation
+
+# Conlcusion
+
+# Discussion
+
+# Conclusion/Futur work
+
+### References
+
+::: {#refs}
+:::
