@@ -58,11 +58,13 @@ For the summary statistics I used the package from *rstatix* [@kassambara_rstati
 
 ## Correlation
 
-For the correlation analysis I used the pacakge *polycor* [@fox_polycor_2022] which is based on polychoric and polyserial correlation.
+For the correlation analysis I used the pacakge *polycor* [@fox_polycor_2022, @noauthor_polychoric_2023] which is based on polychoric and polyserial correlation [@drasgow_polychoric_2006].
 
 ## Mutual information
 
 ## Heatmap
+
+To plot the heat map I used the unbelieveable package *complex heatmap* [@gu_complex_2016, @gu_complex_2022]. All the doc is availabel on the [github page](https://jokergoo.github.io/ComplexHeatmap-reference/book/index.html).
 
 # Model selection and training
 
