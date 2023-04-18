@@ -42,19 +42,12 @@ Usual functions things for everythings !
 tuto :  https://docs.python.org/3/library/importlib.html#importing-a-source-file-directly
 
 ```
-
 file_path_module_functions = "path/to/your/file.py"
-
 module_name = "name"
-
 spec = importlib.util.spec_from_file_location(module_name, file_path_module_functions)
-
 module = importlib.util.module_from_spec(spec)
-
 sys.modules[module_name] = module
-
 spec.loader.exec_module(module)
-
 from name import *
 ```
 
@@ -65,7 +58,6 @@ from name import *
 Plot examples - add double x axis
 
 ```
-
 ggplot(d_eda_summary, aes(x=minute_floor)) +
   geom_ribbon(aes(ymin=q1, ymax=q3), fill="grey80") +
   geom_line(aes(y=median), color="#69b3a2") +
@@ -75,7 +67,6 @@ ggplot(d_eda_summary, aes(x=minute_floor)) +
   ylab("ESC") + xlab("") + ylim(0,100) +
   theme(legend.position = "top") +
   discrete_ggsci_npg
-
 ```
 
 ## Actions
@@ -117,7 +108,6 @@ convert_to_utc = function(vector){
 ```
 
 ```
-
 convert_to_timezone <- function(dataframe, timezone_col, datetime_col) {
   
   # Extract the timezone and datetime columns from the dataframe)
@@ -138,11 +128,9 @@ convert_to_timezone <- function(dataframe, timezone_col, datetime_col) {
   return(datetime_in_timezone)
   
 }
-
 ```
 
 ```
-
 date_diff_seconds <- function(date1, date2) {
 
   # convert both dates to POSIXct format
@@ -156,11 +144,9 @@ date_diff_seconds <- function(date1, date2) {
   return(as.numeric(diff_seconds))
   
 }
-
 ```
 
 ```
-
 convert_minutes_to_hour <- function(minutes) {
 
   # Convert minutes to hours
@@ -175,7 +161,6 @@ convert_minutes_to_hour <- function(minutes) {
   # Return the hour string
   return(hour_string)
 }
-
 ```
 
 # SQL
@@ -213,7 +198,7 @@ cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 - add all dir & file at . in the project : ```git add .```
 - commit and push : ```git commit -m "Initial commit" && git push -u origin master```
 
-### Initializz github repo
+### Initialize github repo
 
 - Check if your take token are up to date or you'll have problem prompt ask name and pwd to connect 
 - First create the empty repo on your account without nothint inside then 
