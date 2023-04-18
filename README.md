@@ -1,30 +1,32 @@
 # General informations : bviReadMe
+![Alt text](src/img/bvireadme_img.svg)
 
 Usual functions things for everythings !
 
-# Anything anywant anywhere
+# Not so random things
+![Alt text](src/img/nsrt_img.svg)
 
 ## Work organisation
 
 - [Data team handbook (jobs and organisation)](https://about.gitlab.com/handbook/business-technology/data-team/)
 
 # Markdown
+![Alt text](src/img/markdown_img.svg)
 
 ## Tips
 
 - [10 awesomes r markdown tricks](https://towardsdatascience.com/ten-awesome-r-markdown-tricks-56ef6d41098)
 
 # IDE
+![Alt text](src/img/ide_img.svg)
 
 ## VCS
-![Alt text](src/img/vsc_img.svg)
 
 ### shortcuts
 
 - collapse all chunks possible : ctrl+k then ctrl+0
 
 ## RStudio
-![Alt text](src/img/rstudio_img.svg)
 
 ## Creating section
 
