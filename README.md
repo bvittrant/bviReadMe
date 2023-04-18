@@ -206,8 +206,7 @@ convert_minutes_to_hour <- function(minutes) {
 
 [Link to join explanations](https://commons.wikimedia.org/wiki/File%3ASQL_Joins.svg)
 
-# Git lab/hub
-![Alt text](src/img/git_img.svg)
+# ![Alt text](src/img/git_img.svg)
 
 ## Command line
 
@@ -248,10 +247,12 @@ cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 
 - start : sudo openvpn path/to/conf.ovpn
 
-#
+# ![Alt text](src/img/datascience_img.svg)
 
 ## Statistical inference with R
 
 This book is nicely written and the open documentation is free. It regroups all what you need to explore data with R and go deeper with linear algebra like regression model: 
 
 - [ModernDive](https://moderndive.com/)
+
+# ![Alt text](src/img/end_img.svg)
