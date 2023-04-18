@@ -8,7 +8,9 @@ Usual functions things for everythings !
 
 # IDE
 
-## VCS 
+## VCS
+
+![Alt text](src/img/vcs_logo.png "a title")
 
 ### shortcuts
 
@@ -83,14 +85,14 @@ sapply(strsplit(colnames(d), "_"), getElement, 1)
 ### Combinations functions (k by n)
 
 ```
+# Calculates the number of combinations of x items that can be selected from a set of n distinct items.
 comb = function(n, x) {
   factorial(n) / factorial(n-x) / factorial(x)
 }
 ```
 
-Compute the max number of different combination possible for a group of features without repettion and no order
-
 ```
+# The max_com function calculates the maximum number of combinations that can be made from a set of n distinct items.
 max_com = function(n){
   sum = 0
   for(i in 1:n){sum = sum + comb(n,i)}
@@ -127,7 +129,6 @@ convert_to_timezone <- function(dataframe, timezone_col, datetime_col) {
 
   # return the vector of datetime values in the specified timezone
   return(datetime_in_timezone)
-  
 }
 ```
 
