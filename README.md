@@ -28,7 +28,7 @@ Usual functions things for everythings !
 
 ## RStudio
 
-## Creating section
+### Creating section
 
 *To insert a new code section you can use the Code -> Insert Section command. Alternatively, any comment line which includes at least four trailing dashes (-), equal signs (=), or pound signs (#) automatically creates a code section. For example, all of the following lines create code sections*
 
@@ -38,9 +38,9 @@ Usual functions things for everythings !
  
  \#\#\# Section Three ############################# 
 
-## Shortcuts
+### Shortcuts
 
-### Collapsing sections
+Collapsing sections :
 
 - Collapse — Alt+L
 - Expand — Shift+Alt+L
@@ -67,7 +67,7 @@ from name import *
 
 ## Pyenv
 
-### Command line
+Command line :
 
 - ```pyenv versions```
 - ```pyenv install 3.8.0```
