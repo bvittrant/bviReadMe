@@ -14,12 +14,13 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 
 - [Data team handbook (jobs and organisation)](https://about.gitlab.com/handbook/business-technology/data-team/)
 
-# Markdown
-![Alt text](src/img/markdown_img.svg)
+# ![Alt text](src/img/markdown_img.svg)
 
 ## Tips
 
 - [10 awesomes r markdown tricks](https://towardsdatascience.com/ten-awesome-r-markdown-tricks-56ef6d41098)
+- [Bookdown](https://bookdown.org/)
+- [Blogdown](https://bookdown.org/yihui/blogdown/)
 
 # ![Alt text](src/img/ide_img.svg)
 
@@ -247,3 +248,10 @@ cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 
 - start : sudo openvpn path/to/conf.ovpn
 
+#
+
+## Statistical inference with R
+
+This book is nicely written and the open documentation is free. It regroups all what you need to explore data with R and go deeper with linear algebra like regression model: 
+
+- [ModernDive](https://moderndive.com/)
