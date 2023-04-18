@@ -17,14 +17,14 @@ Usual functions things for everythings !
 # IDE
 
 ## VCS
-
-![Alt text](src/img/vsc_img.svg "a title")
+![Alt text](src/img/vsc_img.svg)
 
 ### shortcuts
 
 - collapse all chunks possible : ctrl+k then ctrl+0
 
 ## RStudio
+![Alt text](src/img/rstudio_img.svg)
 
 ## Creating section
 
