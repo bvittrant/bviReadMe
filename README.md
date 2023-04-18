@@ -1,5 +1,5 @@
 # General informations : bviReadMe
-![Alt text](src/img/bvireadme_img.svg)
+# ![Alt text](src/img/bvireadme_img.svg)
 
 Usual functions things for everythings !
 
