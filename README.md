@@ -85,7 +85,6 @@ sapply(strsplit(colnames(d), "_"), getElement, 1)
 ```
 comb = function(n, x) {
   factorial(n) / factorial(n-x) / factorial(x)
- 
 }
 ```
 
@@ -99,7 +98,9 @@ max_com = function(n){
 }
 ```
 
-### Dateime, time, timezone
+### Datetime, time, timezone
+
+Here you can find a bunch of functions to deal with datetime management in R. I tried to use base R if possible to limit call to external packages.
 
 ```
 convert_to_utc = function(vector){
