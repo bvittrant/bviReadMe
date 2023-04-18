@@ -48,9 +48,10 @@ Usual functions things for everythings !
 # Python
 ![Alt text](src/img/python_img.svg)
 
-## How to import with direct path
 
-tuto :  https://docs.python.org/3/library/importlib.html#importing-a-source-file-directly
+## Manage paths
+
+[How to import with direct path](https://docs.python.org/3/library/importlib.html#importing-a-source-file-directly)
 
 ```
 file_path_module_functions = "path/to/your/file.py"
@@ -62,8 +63,20 @@ spec.loader.exec_module(module)
 from name import *
 ```
 
+## Pyenv
+
+### Command line
+
+- ```pyenv versions```
+- ```pyenv install 3.8.0```
+- ```pyenv virtualenv x.x.x my_data_env```
+- ```pyenv virtualenv 3.8.0 my_data_env```
+- ```pyenv local my_data_env```
+- ```pyenv uninstall my_data_env```
+
+
 # R
-![Alt text](src/img/R_img.svg)
+![Alt text](src/img/r_img.svg)
 
 ## Plot
 
@@ -183,7 +196,7 @@ convert_minutes_to_hour <- function(minutes) {
 ```
 
 # SQL
-![Alt text](src/img/SQL_img.svg)
+![Alt text](src/img/sql_img.svg)
 
 ## Join
 
@@ -192,6 +205,7 @@ convert_minutes_to_hour <- function(minutes) {
 [Link to join explanations](https://commons.wikimedia.org/wiki/File%3ASQL_Joins.svg)
 
 # Git lab/hub
+![Alt text](src/img/git_img.svg)
 
 ## Command line
 
@@ -219,21 +233,9 @@ cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 
 - ```git add . && git commit -m "your_commit_comment" && git push```
 
-# Pyenv
-
-## Command line
-
-- ```pyenv versions```
-- ```pyenv install 3.8.0```
-- ```pyenv virtualenv x.x.x my_data_env```
-- ```pyenv virtualenv 3.8.0 my_data_env```
-- ```pyenv local my_data_env```
-- ```pyenv uninstall my_data_env```
-
-
-
 
 # VPN
+![Alt text](src/img/vpn_img.svg)
 
 ## openvpn
 
