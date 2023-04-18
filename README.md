@@ -1,10 +1,14 @@
-# General informations : bviReadMe
 # ![Alt text](src/img/bvireadme_img.svg)
 
-Usual functions things for everythings !
+## General informations : bviReadMe
 
-# Not so random things
-![Alt text](src/img/nsrt_img.svg)
+Usual functions things for everythings ! It is just a kind of storage for what I found useful through my personnal or professionnal iterations.
+
+## Licences
+
+Feel free to use or modify and reshare it but cite the github page if you do and you're honnestly honnest.
+
+# ![Alt text](src/img/nsrt_img.svg)
 
 ## Work organisation
 
@@ -17,8 +21,7 @@ Usual functions things for everythings !
 
 - [10 awesomes r markdown tricks](https://towardsdatascience.com/ten-awesome-r-markdown-tricks-56ef6d41098)
 
-# IDE
-![Alt text](src/img/ide_img.svg)
+# ![Alt text](src/img/ide_img.svg)
 
 ## VCS
 
@@ -47,9 +50,7 @@ Collapsing sections :
 - Collapse All — Alt+O
 - Expand All — Shift+Alt+O
 
-# Python
-![Alt text](src/img/python_img.svg)
-
+# ![Alt text](src/img/python_img.svg)
 
 ## Manage paths
 
@@ -77,8 +78,7 @@ Command line :
 - ```pyenv uninstall my_data_env```
 
 
-# R
-![Alt text](src/img/r_img.svg)
+# ![Alt text](src/img/r_img.svg)
 
 ## Plot
 
@@ -197,8 +197,7 @@ convert_minutes_to_hour <- function(minutes) {
 }
 ```
 
-# SQL
-![Alt text](src/img/sql_img.svg)
+# ![Alt text](src/img/sql_img.svg)
 
 ## Join
 
@@ -236,8 +235,11 @@ cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 - ```git add . && git commit -m "your_commit_comment" && git push```
 
 
-# VPN
-![Alt text](src/img/vpn_img.svg)
+# ![Alt text](src/img/vpn_img.svg)
+
+## Protonvpn
+
+[Proton VPN](https://protonvpn.com/?) is maybe the more trustable vpn at the moment only because of its country juridiction (swiss) ath the moment (around 2021). It is just a bit more expensive than its counter part. Be aware that a VPN is rarely useful for common people. The agressiv marketing telling you it's dangerous to be unprotected is kind of overkill except if you live in autocratic country.
 
 ## openvpn
 
