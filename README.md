@@ -18,7 +18,7 @@ Usual functions things for everythings !
 
 ## VCS
 
-![Alt text](src/img/vcs_logo.png "a title")
+![Alt text](src/img/vsc_img.svg "a title")
 
 ### shortcuts
 
