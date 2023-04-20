@@ -52,13 +52,35 @@ palette = "Paired"
 
 ## Distribution
 
+
+```{r, message=F, warning=F}
+
+```
+
+
+The distribution can also be checked using a correlogram where feature distribution is the diagonal part. This graph is created from the *GGally* [@schloerke_ggally_2021] library which extend the ggplot 2 capabilities. You need to reduce matrix input or can take a lot of time nad the plot can be unreadable if you have to much features.
+
+```{r, message=F, warning=F}
+
+```
+
+
 ## Summary statistics
 
 For the summary statistics I used the package from *rstatix* [@kassambara_rstatix_2023] function.
 
+```{r, message=F, warning=F}
+
+```
+
+
 ## Correlation
 
 For the correlation analysis I used the pacakge *polycor* [@fox_polycor_2022, @noauthor_polychoric_2023] which is based on polychoric and polyserial correlation [@drasgow_polychoric_2006].
+
+```{r, message=F, warning=F}
+
+```
 
 ## Mutual information
 
