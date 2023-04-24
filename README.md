@@ -12,8 +12,15 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 # Table of content
 
 1. [Not So Random Things](#nsrt)
-2. [Markdown](#Mmarkdown)
+2. [Markdown](#markdown)
 3. [Integrated Development Environnement (IDE)](#ide)
+4. [Python](#python)
+5. [R](#r)
+6. [Sql](#sql)
+7. [Git](#git)
+7. [Vpn](#vpn)
+7. [Datascience](#datascience)
+7. [End](#end)
 
 # ![](src/img/nsrt_img.svg) <a name="nsrt"></a>
 
@@ -30,8 +37,6 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 - [Blogdown](https://bookdown.org/yihui/blogdown/)
 
 # ![](src/img/ide_img.svg) <a name="ide"></a>
-
-
 
 ## VCS
 
@@ -60,7 +65,7 @@ Collapsing sections :
 - Collapse All — Alt+O
 - Expand All — Shift+Alt+O
 
-# ![Alt text](src/img/python_img.svg)
+# ![Alt text](src/img/python_img.svg) <a name="python"></a>
 
 ## Manage paths
 
@@ -88,7 +93,7 @@ Command line :
 - ```pyenv uninstall my_data_env```
 
 
-# ![Alt text](src/img/r_img.svg)
+# ![Alt text](src/img/r_img.svg) <a name="r"></a>
 
 ## Plot
 
@@ -207,7 +212,7 @@ convert_minutes_to_hour <- function(minutes) {
 }
 ```
 
-# ![Alt text](src/img/sql_img.svg)
+# ![Alt text](src/img/sql_img.svg) <a name="sql"></a>
 
 ## Join
 
@@ -215,7 +220,7 @@ convert_minutes_to_hour <- function(minutes) {
 
 [Link to join explanations](https://commons.wikimedia.org/wiki/File%3ASQL_Joins.svg)
 
-# ![Alt text](src/img/git_img.svg)
+# ![Alt text](src/img/git_img.svg) <a name="git"></a>
 
 ## Command line
 
@@ -244,7 +249,7 @@ cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 - ```git add . && git commit -m "your_commit_comment" && git push```
 
 
-# ![Alt text](src/img/vpn_img.svg)
+# ![Alt text](src/img/vpn_img.svg)  <a name="vpn"></a>
 
 ## Protonvpn
 
@@ -256,7 +261,7 @@ cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 
 - start : sudo openvpn path/to/conf.ovpn
 
-# ![Alt text](src/img/datascience_img.svg)
+# ![Alt text](src/img/datascience_img.svg) <a name="datascience"></a>
 
 ## Statistical inference with R
 
@@ -264,4 +269,4 @@ This book is nicely written and the open documentation is free. It regroups all 
 
 - [ModernDive](https://moderndive.com/)
 
-# ![Alt text](src/img/end_img.svg)
+# ![Alt text](src/img/end_img.svg) <a name="end"></a>
