@@ -15,7 +15,7 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 2. [Markdown](#Markdown)
 3. [IDE](#IDE)
 
-# ![](src/img/nsrt_img.svg)
+# ![](src/img/nsrt_img.svg "NSRT")
 
 ## Work organisation
 
