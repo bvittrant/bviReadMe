@@ -30,6 +30,7 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 - [Blogdown](https://bookdown.org/yihui/blogdown/)
 
 # ![IDE](src/img/ide_img.svg)
+# IDE
 
 ## VCS
 
