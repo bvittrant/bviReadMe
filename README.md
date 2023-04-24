@@ -11,17 +11,17 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 
 # Table of content
 
-1. [Not So Random Things](#NSRT)
-2. [Markdown](#Markdown)
-3. [IDE](#ide)
+1. [Not So Random Things](#nsrt)
+2. [Markdown](#Mmarkdown)
+3. [Integrated Development Environnement (IDE)](#ide)
 
-# ![](src/img/nsrt_img.svg) <a name="NSRT"></a>
+# ![](src/img/nsrt_img.svg) <a name="nsrt"></a>
 
 ## Work organisation
 
 - [Data team handbook (jobs and organisation)](https://about.gitlab.com/handbook/business-technology/data-team/)
 
-# ![](src/img/markdown_img.svg) <a name="Markdown"></a>
+# ![](src/img/markdown_img.svg) <a name="markdown"></a>
 
 ## Tips
 
