@@ -21,7 +21,7 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 
 - [Data team handbook (jobs and organisation)](https://about.gitlab.com/handbook/business-technology/data-team/)
 
-# ![Markdown](src/img/markdown_img.svg)
+# ![Markdown](src/img/markdown_img.svg "Markdown")
 
 ## Tips
 
