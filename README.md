@@ -29,7 +29,8 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 - [Bookdown](https://bookdown.org/)
 - [Blogdown](https://bookdown.org/yihui/blogdown/)
 
-# ![](src/img/ide_img.svg) <a name="IDE"></a>
+# ![IDE](src/img/ide_img.svg "IDE") <a name="IDE"></a>
+
 
 
 ## VCS
