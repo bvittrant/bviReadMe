@@ -11,16 +11,16 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 
 # Table of content
 
-1. [Not So Random Things](#nsrt)
-2. [Markdown](#markdown)
-3. [Integrated Development Environnement (IDE)](#ide)
-4. [Python](#python)
-5. [R](#r)
-6. [Sql](#sql)
-7. [Git](#git)
-7. [Vpn](#vpn)
-7. [Datascience](#datascience)
-7. [End](#end)
+- [Not So Random Things](#nsrt)
+- [Markdown](#markdown)
+- [Integrated Development Environnement (IDE)](#ide)
+- [Python](#python)
+- [R](#r)
+- [Sql](#sql)
+- [Git](#git)
+- [Vpn](#vpn)
+- [Datascience](#datascience)
+- [End](#end)
 
 # ![](src/img/nsrt_img.svg) <a name="nsrt"></a>
 
