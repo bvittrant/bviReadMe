@@ -13,9 +13,9 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 
 1. [Not So Random Things](#NSRT)
 2. [Markdown](#Markdown)
-3. [IDE](#IDE)
+3. @fig:IDE
 
-# ![](src/img/nsrt_img.svg "NSRT")
+# ![](src/img/nsrt_img.svg)
 
 ## Work organisation
 
@@ -29,7 +29,7 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 - [Bookdown](https://bookdown.org/)
 - [Blogdown](https://bookdown.org/yihui/blogdown/)
 
-# ![IDE](src/img/ide_img.svg)
+# ![](src/img/ide_img.svg){#IDE}
 # IDE
 
 ## VCS
