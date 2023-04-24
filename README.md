@@ -8,13 +8,20 @@ Usual functions things for everythings ! It is just a kind of storage for what I
 
 Feel free to use or modify and reshare it but cite the github page if you do and you're honnestly honnest.
 
-# ![Alt text](src/img/nsrt_img.svg)
+
+# Table of content
+
+1. [Not So Random Things](#NSRT)
+2. [Markdown](#Markdown)
+3. [IDE](#IDE)
+
+# ![NSRT](src/img/nsrt_img.svg)
 
 ## Work organisation
 
 - [Data team handbook (jobs and organisation)](https://about.gitlab.com/handbook/business-technology/data-team/)
 
-# ![Alt text](src/img/markdown_img.svg)
+# ![Markdown](src/img/markdown_img.svg)
 
 ## Tips
 
@@ -22,7 +29,7 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 - [Bookdown](https://bookdown.org/)
 - [Blogdown](https://bookdown.org/yihui/blogdown/)
 
-# ![Alt text](src/img/ide_img.svg)
+# ![IDE](src/img/ide_img.svg)
 
 ## VCS
 
