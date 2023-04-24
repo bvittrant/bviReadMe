@@ -13,7 +13,7 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 
 1. [Not So Random Things](#NSRT)
 2. [Markdown](#Markdown)
-3. [pookie](#pookie)
+3. [IDE](#ide)
 
 # ![](src/img/nsrt_img.svg) <a name="NSRT"></a>
 
@@ -29,7 +29,7 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 - [Bookdown](https://bookdown.org/)
 - [Blogdown](https://bookdown.org/yihui/blogdown/)
 
-# ![IDE](src/img/ide_img.svg "IDE") <a name="pookie"></a>
+# ![IDE](src/img/ide_img.svg "IDE") <a name="ide"></a>
 
 
 
