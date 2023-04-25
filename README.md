@@ -128,6 +128,14 @@ sapply(strsplit(colnames(d), "_"), getElement, 1)
 
 ## Functions
 
+### Add column to dataframe.
+
+The next chunck of code allows you to add a categorical columns based on a numerical one in a dataframe 
+
+```
+df$age_category <- cut(df$age, breaks = c(-Inf, 30, 60, Inf), 
+                       labels = c("under 30", "30-60", "over 60"))
+```
 
 ### Combinations functions (k by n)
 
