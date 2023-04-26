@@ -126,6 +126,19 @@ Split string and keep specific element
 sapply(strsplit(colnames(d), "_"), getElement, 1)
 ```
 
+Check duplicated value in dataframe colum.
+
+```
+# Check if 'name' column contains duplicates
+duplicates <- duplicated(df$name) | duplicated(df$name, fromLast = TRUE)
+
+# Extract the rows containing duplicates
+df_duplicates <- df[duplicates, ]
+
+# Print the rows containing duplicates
+print(df_duplicates)
+```
+
 ## Functions
 
 ### Add column to dataframe.
