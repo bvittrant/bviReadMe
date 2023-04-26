@@ -46,24 +46,27 @@ palette = "Paired"
 
 # Data collection and preprocessing
 
+```{r, message=F, warning=F}
+```
+
 # Feature engineering
+
+```{r, message=F, warning=F}
+```
 
 # Exploration
 
 ## Distribution
 
-
 ```{r, message=F, warning=F}
 
 ```
-
 
 The distribution can also be checked using a correlogram where feature distribution is the diagonal part. This graph is created from the *GGally* [@schloerke_ggally_2021] library which extend the ggplot 2 capabilities. You need to reduce matrix input or can take a lot of time nad the plot can be unreadable if you have to much features.
 
 ```{r, message=F, warning=F}
 
 ```
-
 
 ## Summary statistics
 
@@ -72,7 +75,6 @@ For the summary statistics I used the package from *rstatix* [@kassambara_rstati
 ```{r, message=F, warning=F}
 
 ```
-
 
 ## Correlation
 
@@ -84,19 +86,67 @@ For the correlation analysis I used the pacakge *polycor* [@fox_polycor_2022, @n
 
 ## Mutual information
 
+```{r, message=F, warning=F}
+```
+
 ## Heatmap
 
 To plot the heat map I used the unbelieveable package *complex heatmap* [@gu_complex_2016, @gu_complex_2022]. All the doc is availabel on the [github page](https://jokergoo.github.io/ComplexHeatmap-reference/book/index.html).
 
+```{r, message=F, warning=F}
+# Select data
+n = 1000
+data_heatmap = data
+data_heatmap_num = data_num
+mat_heatmap = scale(log(data_heatmap_num[1:n,]+1)) %>% as.matrix()
+#mat_heatmap = data_num[1:n,] %>% as.matrix()
+
+# Define annotation
+column_ha = HeatmapAnnotation(Barplot = anno_density(mat_heatmap, type = "violin"))
+row_ha = rowAnnotation(Age = data_heatmap[1:n, "age"], Gender = data_heatmap[1:n, "gender"], Continent = data_heatmap[1:n, "continent"], Height = data_heatmap[1:n, "height"])
+
+# Definine color function
+col_fun = colorRamp2(c(-2, 0, 2), hcl_palette = "Tropic")
+
+# Define split
+#r_split = data_heatmap.frame(data[1:n, "year"], data[1:n, "continent"])
+r_split = data_heatmap[1:n, "gender"]
+
+# Create the heatmap
+ht = Heatmap(mat_heatmap , show_row_names = F, right_annotation = row_ha, top_annotation = column_ha, col = col_fun,
+        row_split = r_split)
+ht
+# save the heamap
+#pdf("plot_exploration_diabetic_foot_heatmap.pdf", width = 20, height = 15)
+#draw(ht)
+#dev.off()
+
+```
+
 # Model selection and training
+
+```{r, message=F, warning=F}
+```
 
 # Model evaluation
 
+```{r, message=F, warning=F}
+```
+
 # Conlcusion
+
+```{r, message=F, warning=F}
+```
 
 # Discussion
 
+```{r, message=F, warning=F}
+```
+
 # Conclusion/Futur work
+
+```{r, message=F, warning=F}
+```
 
 ### References
 
