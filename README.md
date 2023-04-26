@@ -300,8 +300,7 @@ convert_minutes_to_hour <- function(minutes) {
 
 ### Create template
 
-pip install cookiecutter
-cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
+pip install cookiecutter && cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
 
 ### initialize gitlab repo
 
