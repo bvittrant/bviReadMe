@@ -136,6 +136,12 @@ df_duplicates <- df[duplicated(df$name), ]
 print(df_duplicates)
 ```
 
+Remove duplicated row, keep unique rows.
+
+```
+# Subset the dataframe to remove duplicates
+df <- subset(df, !duplicated(df))
+```
 ## Functions
 
 ### Add column to dataframe.
