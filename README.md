@@ -130,10 +130,7 @@ Check duplicated value in dataframe colum.
 
 ```
 # Check if 'name' column contains duplicates
-duplicates <- duplicated(df$name) | duplicated(df$name, fromLast = TRUE)
-
-# Extract the rows containing duplicates
-df_duplicates <- df[duplicates, ]
+df_duplicates <- df[duplicated(df$name), ]
 
 # Print the rows containing duplicates
 print(df_duplicates)
