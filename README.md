@@ -300,7 +300,11 @@ convert_minutes_to_hour <- function(minutes) {
 
 ### Create template
 
-pip install cookiecutter && cookiecutter git@gitlab.corp.withings.com:Yourdir/yourproject
+This command will install a template directory from an existing one at the requested url.
+
+```
+pip install cookiecutter && cookiecutter git@gitlab.corp.your_compagny.com:Yourdir/yourproject
+```
 
 ### initialize gitlab repo
 
