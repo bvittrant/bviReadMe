@@ -93,6 +93,56 @@ Command line :
 - ```pyenv uninstall my_data_env```
 
 
+## DB interaction
+
+Download data from clickhouse with a specific url ocnnection
+
+```
+def download_data_clickhouse(path_to_file, url, query, silence=False):
+    
+    """
+    Download data from your database from your specified query and format it to panda dataframe. 
+    
+    If the file already exist it just read it isntead of re-downloading it.
+
+    Arguments:
+        path_to_file -- Provide the path where to download the data
+        url -- Provide the URL connection to your database
+        query -- Provide the query you want to send to your database
+
+    Keyword Arguments:
+        silence -- No verbose function (default: {False})
+
+    Returns:
+        return a panda dataframe with the data from your query
+    """
+
+    if os.path.isfile(path_to_file):
+        if(silence == False):
+            print("File already exists")
+        df = pd.read_csv(path_to_file, sep=';')
+    else:
+        if(silence == False):
+            print("I'm connecting & downloading the data from your database")
+
+        # Connect to the client
+        client = Client.from_url(url)
+
+        # Download the data from CH client
+        data = client.execute_iter(query, with_column_types=True)
+
+        # Build columns name
+        columns = [column[0] for column in next(data)]
+
+        # Convert data to pandas DF format
+        df = pd.DataFrame.from_records(data, columns=columns)
+        
+        # save the results
+        df.to_csv(path_to_file, index=False, sep=';')
+
+    return df
+```
+
 # ![Alt text](src/img/r_img.svg) <a name="r"></a>
 
 ## Plot
