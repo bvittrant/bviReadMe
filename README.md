@@ -192,6 +192,19 @@ Remove duplicated row, keep unique rows.
 # Subset the dataframe to remove duplicates
 df <- subset(df, !duplicated(df))
 ```
+
+Check if library is not already installed then install it if not then load it.
+
+```
+# Check if package is already installed
+if(!require(dplyr)) {
+  # Install package if not installed
+  install.packages("dplyr")
+}
+
+# Load package
+library(dplyr)
+```
 ## Functions
 
 ### Add column to dataframe.
