@@ -302,6 +302,8 @@ convert_minutes_to_hour <- function(minutes) {
 
 ### Install, check and load library
 
+For one library.
+
 ```
 install_and_load_package <- function(pkg_name) {
   if (!require(pkg_name, character.only = TRUE)) {
@@ -309,6 +311,25 @@ install_and_load_package <- function(pkg_name) {
     library(pkg_name, character.only = TRUE)
   } else {
     library(pkg_name, character.only = TRUE)
+  }
+}
+```
+
+For multiple libraries.
+
+```
+install_and_load_packages <- function(pkg_names) {
+  for (pkg_name in pkg_names) {
+    if (!requireNamespace(pkg_name, quietly = TRUE)) {
+      tryCatch({
+        install.packages(pkg_name)
+        library(pkg_name, character.only = TRUE)
+      }, error = function(e) {
+        message("Failed to install and load package: ", pkg_name)
+      })
+    } else {
+      library(pkg_name, character.only = TRUE)
+    }
   }
 }
 ```
