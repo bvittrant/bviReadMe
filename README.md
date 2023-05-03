@@ -315,15 +315,26 @@ install_and_load_package <- function(pkg_name) {
 }
 ```
 
-For multiple libraries.
+For multiple libraries and manage package from bioconductor.
 
 ```
 install_and_load_packages <- function(pkg_names) {
   for (pkg_name in pkg_names) {
     if (!requireNamespace(pkg_name, quietly = TRUE)) {
       tryCatch({
-        install.packages(pkg_name)
-        library(pkg_name, character.only = TRUE)
+        if (substr(pkg_name, 1, 2) == "Bi") {
+          # Bioconductor package
+          if (!requireNamespace("BiocManager", quietly = TRUE)) {
+            install.packages("BiocManager")
+            library(BiocManager)
+          }
+          BiocManager::install(pkg_name)
+          library(pkg_name, character.only = TRUE)
+        } else {
+          # CRAN package
+          install.packages(pkg_name)
+          library(pkg_name, character.only = TRUE)
+        }
       }, error = function(e) {
         message("Failed to install and load package: ", pkg_name)
       })
