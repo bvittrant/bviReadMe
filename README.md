@@ -205,6 +205,7 @@ if(!require(dplyr)) {
 # Load package
 library(dplyr)
 ```
+
 ## Functions
 
 ### Add column to dataframe.
@@ -296,6 +297,19 @@ convert_minutes_to_hour <- function(minutes) {
   
   # Return the hour string
   return(hour_string)
+}
+```
+
+### Install, check and load library
+
+```
+install_and_load_package <- function(pkg_name) {
+  if (!require(pkg_name, character.only = TRUE)) {
+    install.packages(pkg_name)
+    library(pkg_name, character.only = TRUE)
+  } else {
+    library(pkg_name, character.only = TRUE)
+  }
 }
 ```
 

@@ -31,7 +31,17 @@ rm(list = ls(all.names = TRUE))
 ## Packages
 
 ```{r, message=F, warning=F}
-library(ggsci)
+
+install_and_load_package <- function(pkg_name) {
+  if (!require(pkg_name, character.only = TRUE)) {
+    install.packages(pkg_name)
+    library(pkg_name, character.only = TRUE)
+  } else {
+    library(pkg_name, character.only = TRUE)
+  }
+}
+
+install_and_load_package("ggsci")
 ```
 
 ## Colors
