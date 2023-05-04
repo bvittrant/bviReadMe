@@ -345,6 +345,32 @@ install_and_load_packages <- function(pkg_names) {
 }
 ```
 
+### Dataframes mangement
+
+```
+# Remove duplicated rows
+remove_duplicated_rows <- function(df, cols_to_check) {
+  # identify the duplicated rows based on the specified columns
+  dup_rows <- duplicated(df[, cols_to_check]) | duplicated(df[, cols_to_check], fromLast = TRUE)
+  
+  # remove the duplicated rows
+  df_unique <- df[!dup_rows, ]
+  
+  # return the updated dataframe
+  return(df_unique)
+}
+
+# Convert col to character type
+convert_cols_to_character <- function(df, colnames_to_convert) {
+  # loop through each column name and convert to character type
+  for (colname in colnames_to_convert) {
+    df[[colname]] <- as.character(df[[colname]])
+  }
+  
+  # return the updated dataframe
+  return(df)
+}
+```
 # ![Alt text](src/img/sql_img.svg) <a name="sql"></a>
 
 ## Join
