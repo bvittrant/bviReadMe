@@ -28,7 +28,7 @@ bibliography: references.bib
 rm(list = ls(all.names = TRUE))
 ```
 
-## Packages
+## Functions
 
 ```{r, message=F, warning=F}
 
@@ -38,10 +38,6 @@ install_and_load_packages <- function(pkg_names) {
       tryCatch({
         if (substr(pkg_name, 1, 2) == "Bi") {
           # Bioconductor package
-          if (!requireNamespace("BiocManager", quietly = TRUE)) {
-            install.packages("BiocManager")
-            library(BiocManager)
-          }
           BiocManager::install(pkg_name)
           library(pkg_name, character.only = TRUE)
         } else {
@@ -57,6 +53,24 @@ install_and_load_packages <- function(pkg_names) {
     }
   }
 }
+
+remove_duplicated_rows <- function(df, cols_to_check) {
+  # identify the duplicated rows based on the specified columns
+  dup_rows <- duplicated(df[, cols_to_check]) | duplicated(df[, cols_to_check], fromLast = TRUE)
+  
+  # remove the duplicated rows
+  df_unique <- df[!dup_rows, ]
+  
+  # return the updated dataframe
+  return(df_unique)
+}
+
+```
+
+
+## Packages
+
+```{r, message=F, warning=F}
 
 list_pkg = c("BiocManager","ggsci", "plotly", "GGally", "reshape2","webshot2" ,"gtsummary", "tidyr", "polycor", "rstatix",
              "ComplexHeatmap", "circlize", "cowplot", "dplyr", "reticulate")
