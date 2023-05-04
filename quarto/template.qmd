@@ -31,7 +31,7 @@ rm(list = ls(all.names = TRUE))
 ## Functions
 
 ```{r, message=F, warning=F}
-
+# Install load pkg
 install_and_load_packages <- function(pkg_names) {
   for (pkg_name in pkg_names) {
     if (!requireNamespace(pkg_name, quietly = TRUE)) {
@@ -54,6 +54,7 @@ install_and_load_packages <- function(pkg_names) {
   }
 }
 
+# Remove duplicated rows
 remove_duplicated_rows <- function(df, cols_to_check) {
   # identify the duplicated rows based on the specified columns
   dup_rows <- duplicated(df[, cols_to_check]) | duplicated(df[, cols_to_check], fromLast = TRUE)
@@ -64,6 +65,20 @@ remove_duplicated_rows <- function(df, cols_to_check) {
   # return the updated dataframe
   return(df_unique)
 }
+
+# Convert col to character type
+convert_cols_to_character <- function(df, colnames_to_convert) {
+  # loop through each column name and convert to character type
+  for (colname in colnames_to_convert) {
+    df[[colname]] <- as.character(df[[colname]])
+  }
+  
+  # return the updated dataframe
+  return(df)
+}
+
+
+
 
 ```
 
