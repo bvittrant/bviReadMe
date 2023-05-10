@@ -371,6 +371,7 @@ convert_cols_to_character <- function(df, colnames_to_convert) {
   return(df)
 }
 ```
+
 # ![Alt text](src/img/sql_img.svg) <a name="sql"></a>
 
 ## Join
