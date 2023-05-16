@@ -76,12 +76,7 @@ convert_cols_to_character <- function(df, colnames_to_convert) {
   # return the updated dataframe
   return(df)
 }
-
-
-
-
 ```
-
 
 ## Packages
 
@@ -105,8 +100,116 @@ palette = "Paired"
 
 # Data collection and preprocessing
 
-```{r, message=F, warning=F}
+In this part we will download the data from structured data model *Clickhouse* [@clickhouse_fast_nodate] with a homemade function. 
+
+```{python, message=F, warning=F}
+###############################################################################
+# Import
+###############################################################################
+
+from datetime import datetime
+from heapq import merge
+from tabnanny import verbose
+from clickhouse_driver import Client
+import os
+import pandas as pd
+import numpy as np
+import configparser
+
+###############################################################################
+# SECURITY
+###############################################################################
+
+# !!! WARNINGS !!! #
+# File config path - Uniq to each user 
+path_config = "/home/bvittrant/Documents/RetD/Python/conf_git/datascience.conf"
+configParser = configparser.RawConfigParser()
+configParser.read(path_config)
+
+
+# set path to directory for data and results
+Path_to_data = "../data/"
+Path_to_data_raw = Path_to_data + "raw/"
+Path_to_data_raw_internal = Path_to_data_raw + "internal/"
+Path_to_data_processed = Path_to_data + "processed/"
+
+# Headname for all files
+headname = "eda_exploration_"
+
+###############################################################################
+# FUNCTIONS
+###############################################################################
+
+# Check if file exist and if not DL it from the provided query
+def download_data_clickhouse(path_to_file, url, query, silence=False):
+    
+    """
+    Download data from your database from your specified query and format it to panda dataframe. 
+    
+    If the file already exist it just read it isntead of re-downloading it.
+
+    Arguments:
+        path_to_file -- Provide the path where to download the data
+        url -- Provide the URL connection to your database
+        query -- Provide the query you want to send to your database
+
+    Keyword Arguments:
+        silence -- No verbose function (default: {False})
+
+    Returns:
+        return a panda dataframe with the data from your query
+    """
+
+    if os.path.isfile(path_to_file):
+        if(silence == False):
+            print("File already exists")
+        df = pd.read_csv(path_to_file, sep=';')
+    else:
+        if(silence == False):
+            print("I'm connecting & downloading the data from your database")
+
+        # Connect to the client
+        client = Client.from_url(url)
+
+        # Download the data from CH client
+        data = client.execute_iter(query, with_column_types=True)
+
+        # Build columns name
+        columns = [column[0] for column in next(data)]
+
+        # Convert data to pandas DF format
+        df = pd.DataFrame.from_records(data, columns=columns)
+        
+        # save the results
+        df.to_csv(path_to_file, index=False, sep=';')
+
+    return df
+
+###############################################################################
+# DATABASE CONNECTION
+###############################################################################
+
+# Build URL connection for futur sql requests
+url = configParser['clickhouse']['ch_name'] + configParser['withings']['USER_LDAP'] \
+    + ":" + configParser['withings']['MDP_LDAP'] + configParser['clickhouse']['ch_adress']
+
+###############################################################################
+# QUERIES survey data collection
+###############################################################################
+# Same results but with survey data.
+query_xxxx = f'''
+'''
+
+# Get & save all the data 
+name = Path_to_data_raw_internal + headname +"data_xxxx.csv"
+tmp = download_data_clickhouse(name, url, query_xxxx)
+
+
+###############################################################################
+# END
+###############################################################################
 ```
+
 
 # Feature engineering
 
@@ -154,27 +257,28 @@ To plot the heat map I used the unbelieveable package *complex heatmap* [@gu_com
 
 ```{r, message=F, warning=F}
 # Select data
-n = 1000
-data_heatmap = data
-data_heatmap_num = data_num
-mat_heatmap = scale(log(data_heatmap_num[1:n,]+1)) %>% as.matrix()
+#n = 1000
+#data_heatmap = data
+#data_heatmap_num = data_num
+#mat_heatmap = scale(log(data_heatmap_num[1:n,]+1)) %>% as.matrix()
+
 #mat_heatmap = data_num[1:n,] %>% as.matrix()
 
 # Define annotation
-column_ha = HeatmapAnnotation(Barplot = anno_density(mat_heatmap, type = "violin"))
-row_ha = rowAnnotation(Age = data_heatmap[1:n, "age"], Gender = data_heatmap[1:n, "gender"], Continent = data_heatmap[1:n, "continent"], Height = data_heatmap[1:n, "height"])
+#column_ha = HeatmapAnnotation(Barplot = anno_density(mat_heatmap, type = "violin"))
+#row_ha = rowAnnotation(Age = data_heatmap[1:n, "age"], Gender = data_heatmap[1:n, "gender"], Continent = data_heatmap[1:n, "continent"], Height = data_heatmap[1:n, "height"])
 
 # Definine color function
-col_fun = colorRamp2(c(-2, 0, 2), hcl_palette = "Tropic")
+#col_fun = colorRamp2(c(-2, 0, 2), hcl_palette = "Tropic")
 
 # Define split
 #r_split = data_heatmap.frame(data[1:n, "year"], data[1:n, "continent"])
-r_split = data_heatmap[1:n, "gender"]
+#r_split = data_heatmap[1:n, "gender"]
 
 # Create the heatmap
-ht = Heatmap(mat_heatmap , show_row_names = F, right_annotation = row_ha, top_annotation = column_ha, col = col_fun,
+#ht = Heatmap(mat_heatmap , show_row_names = F, right_annotation = row_ha, top_annotation = column_ha, col = col_fun,
         row_split = r_split)
-ht
+#ht
 # save the heamap
 #pdf("plot_exploration_diabetic_foot_heatmap.pdf", width = 20, height = 15)
 #draw(ht)
@@ -207,7 +311,11 @@ ht
 ```{r, message=F, warning=F}
 ```
 
-### References
+# Thanks
+
+I'd like to thank the scikit-Learn team in general for their amazing work [@scikit-learn;@sklearn_api] and also the *Stack Overflow* [@noauthor_stack_nodate] community and *Github* [@noauthor_github_nodate] for providing code repository.
+
+# References
 
 ::: {#refs}
 :::

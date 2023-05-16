@@ -374,6 +374,16 @@ convert_cols_to_character <- function(df, colnames_to_convert) {
 
 # ![Alt text](src/img/sql_img.svg) <a name="sql"></a>
 
+## Insert variables from R/python into CH query
+
+Use the syntax :
+
+```
+select *
+from my_table
+where my_feature in {tuple(my_list)}
+```
+
 ## Join
 
 ### Wikimedia references
