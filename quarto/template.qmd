@@ -20,6 +20,23 @@ bibliography: references.bib
 
 ## Objectives
 
+## Be aware
+
+::: callout-note
+:::
+
+::: callout-warning
+:::
+
+::: callout-important
+:::
+
+::: callout-tip
+:::
+
+::: caution
+:::
+
 # Code set-up
 
 ## Clean
