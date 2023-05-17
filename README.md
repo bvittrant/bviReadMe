@@ -36,9 +36,9 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 - [Bookdown](https://bookdown.org/)
 - [Blogdown](https://bookdown.org/yihui/blogdown/)
 
-## Chunck
+## Chunk
 
-[Chunck options](https://quarto.org/docs/computations/execution-options.html) :
+[Chunk options](https://quarto.org/docs/computations/execution-options.html) :
 
 - eval : Evaluate the code chunk (if false, just echos the code into the output).
 - echo : Include the source code in output
