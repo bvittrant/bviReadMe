@@ -80,7 +80,7 @@ Collapsing sections :
 
 ### Figures
 
-test lvkfôvkofejfdn,dpnvdknf
+test 1
 
 # ![Alt text](src/img/python_img.svg) <a name="python"></a>
 
