@@ -81,6 +81,14 @@ spec.loader.exec_module(module)
 from name import *
 ```
 
+Just check if a file exist.
+
+```
+import os
+os.path.isfile(path)
+os.path.exists(path)
+```
+
 ## Pyenv
 
 Command line :
