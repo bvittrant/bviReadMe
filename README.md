@@ -80,6 +80,8 @@ Collapsing sections :
 
 ### Figures
 
+test lvkfôvkofejfdn,dpnvdknf
+
 # ![Alt text](src/img/python_img.svg) <a name="python"></a>
 
 ## Manage paths
