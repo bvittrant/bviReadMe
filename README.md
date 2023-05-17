@@ -78,10 +78,6 @@ Collapsing sections :
 - error : Include errors in the output (note that this implies that errors executing code will not halt processing of the document).
 - include : Catch all for preventing any output (code or results) from being included (e.g. include: false suppresses all output from the code block).
 
-### Figures
-
-test 1
-
 # ![Alt text](src/img/python_img.svg) <a name="python"></a>
 
 ## Manage paths
