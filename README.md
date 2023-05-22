@@ -164,6 +164,16 @@ def download_data_clickhouse(path_to_file, url, query, silence=False):
 
 # ![Alt text](src/img/r_img.svg) <a name="r"></a>
 
+## Environement
+
+To managa env properly in R you can use the package [renv](https://github.com/rstudio/renv)
+
+- initialize : *Use renv::init() to initialize renv with a new or existing project. This will set up your project with a private library, containing all the packages you're currently using. The packages (and all the metadata needed to reinstall them) are also recorded into a lockfile, renv.lock.*
+
+- save snapshot : *As you work in your project, you will install and upgrade packages. After you've confirmed your code works as expected, call renv::snasphot() to record their versions in the lockfile.*
+
+- Restore : *Later, if you need to share your code with someone else or run your code on new machine, you can call renv::restore() to reinstall the specific package versions recorded in the lockfile.*
+
 ## Plot
 
 ### Double axis

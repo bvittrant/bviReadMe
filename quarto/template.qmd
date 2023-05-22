@@ -100,10 +100,19 @@ convert_cols_to_character <- function(df, colnames_to_convert) {
 ```{r, message=F, warning=F}
 
 list_pkg = c("BiocManager","ggsci", "plotly", "GGally", "reshape2","webshot2" ,"gtsummary", "tidyr", "polycor", "rstatix",
-             "ComplexHeatmap", "circlize", "cowplot", "dplyr", "reticulate")
+             "ComplexHeatmap", "circlize", "cowplot", "dplyr", "reticulate", "renv")
 install_and_load_packages(list_pkg)
 
 ```
+
+## Env
+
+Initialize a specific R env to work in a isolated env properly. Packages are saved within the renv.lock file.
+
+```{r, message=F, warning=F, eval=F}
+renv::init()
+```
+
 
 ## Colors
 
@@ -221,6 +230,12 @@ query_xxxx = f'''
 name = Path_to_data_raw_internal + headname +"data_xxxx.csv"
 tmp = download_data_clickhouse(name, url, query_xxxx)
 
+
+###############################################################################
+# Create requirement.txt
+###############################################################################
+
+os.system("pipreqs --force ../")
 
 ###############################################################################
 # END
