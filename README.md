@@ -419,6 +419,12 @@ where my_feature in {tuple(my_list)}
 
 [Link to join explanations](https://commons.wikimedia.org/wiki/File%3ASQL_Joins.svg)
 
+# ![Alt text](src/img/bash_img.svg) <a name="bash"></a>
+
+## Awk 
+
+You can find some explanations about the awk function [here](https://www.cyberciti.biz/faq/bash-scripting-using-awk/).
+
 # ![Alt text](src/img/git_img.svg) <a name="git"></a>
 
 ## Command line
