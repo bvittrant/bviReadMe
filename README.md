@@ -17,6 +17,7 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 - [Python](#python)
 - [R](#r)
 - [Sql](#sql)
+- [Bash](#bash)
 - [Git](#git)
 - [Vpn](#vpn)
 - [Datascience](#datascience)
