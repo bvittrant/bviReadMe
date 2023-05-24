@@ -14,6 +14,16 @@ license: "Copyright Benjamin Vittrant, 2022. All Rights Reserved. The diffusion,
 bibliography: references.bib
 ---
 
+# Disclaimer
+
+::: callout-important
+
+- This work is only made for internal diffusion
+- Ask permission for any image re-sharing
+- If any doubt just don't share it or anything that come from it
+
+:::
+
 # Introduction
 
 ## Context
