@@ -17,11 +17,8 @@ bibliography: references.bib
 # Disclaimer
 
 ::: callout-important
-
 - This work is only made for internal diffusion
-- Ask permission for any image re-sharing
-- If any doubt just don't share it or anything that come from it
-
+- Ask permission for any image/text/information re-sharing
 :::
 
 # Introduction
