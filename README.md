@@ -478,4 +478,10 @@ This book is nicely written and the open documentation is free. It regroups all 
 
 - [ModernDive](https://moderndive.com/)
 
+## Statistical inference with python
+
+### A tutorial on statistical-learning for scientific data processing
+
+- [scikit-learn](https://scikit-learn.org/stable/tutorial/statistical_inference/index.html)
+
 # ![Alt text](src/img/end_img.svg) <a name="end"></a>

@@ -107,7 +107,7 @@ convert_cols_to_character <- function(df, colnames_to_convert) {
 ```{r, message=F, warning=F}
 
 list_pkg = c("BiocManager","ggsci", "plotly", "GGally", "reshape2","webshot2" ,"gtsummary", "tidyr", "polycor", "rstatix",
-             "ComplexHeatmap", "circlize", "cowplot", "dplyr", "reticulate", "renv")
+             "ComplexHeatmap", "circlize", "cowplot", "dplyr", "reticulate", "renv", "report", "easystats")
 install_and_load_packages(list_pkg)
 
 ```
