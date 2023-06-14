@@ -480,8 +480,7 @@ This book is nicely written and the open documentation is free. It regroups all 
 
 ## Statistical inference with python
 
-### A tutorial on statistical-learning for scientific data processing
-
-- [scikit-learn](https://scikit-learn.org/stable/tutorial/statistical_inference/index.html)
+- [A tutorial on statistical-learning for scientific data processing](https://scikit-learn.org/stable/tutorial/statistical_inference/index.html)
+- (Statistical hypothesis tests](https://machinelearningmastery.com/statistical-hypothesis-tests-in-python-cheat-sheet/)
 
 # ![Alt text](src/img/end_img.svg) <a name="end"></a>
