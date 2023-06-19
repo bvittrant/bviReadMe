@@ -17,8 +17,8 @@ bibliography: references.bib
 # Disclaimer
 
 ::: callout-important
-- This work is only made for internal diffusion
-- Ask permission for any image/text/information re-sharing
+-   This work is only made for internal diffusion
+-   Ask permission for any image/text/information re-sharing
 :::
 
 # Introduction
@@ -120,7 +120,6 @@ Initialize a specific R env to work in a isolated env properly. Packages are sav
 renv::init()
 ```
 
-
 ## Colors
 
 We define color palette from the *ggsci* [@xiao__aut_ggsci_2023] that recreate color from scientific publication.
@@ -133,9 +132,9 @@ palette = "Paired"
 
 # Data collection and preprocessing
 
-In this part we will download the data from structured data model *Clickhouse* [@clickhouse_fast_nodate] with a homemade function. 
+In this part we will download the data from structured data model *Clickhouse* [@clickhouse_fast_nodate] with a homemade function.
 
-```{python, message=F, warning=F}
+```{python, message=F, warning=F, eval=F}
 ###############################################################################
 # Import
 ###############################################################################
@@ -249,7 +248,6 @@ os.system("pipreqs --force ../")
 ###############################################################################
 ```
 
-
 # Feature engineering
 
 ```{r, message=F, warning=F}
@@ -316,7 +314,7 @@ To plot the heat map I used the unbelieveable package *complex heatmap* [@gu_com
 
 # Create the heatmap
 #ht = Heatmap(mat_heatmap , show_row_names = F, right_annotation = row_ha, top_annotation = column_ha, col = col_fun,
-        row_split = r_split)
+#        row_split = r_split)
 #ht
 # save the heamap
 #pdf("plot_exploration_diabetic_foot_heatmap.pdf", width = 20, height = 15)
@@ -352,7 +350,7 @@ To plot the heat map I used the unbelieveable package *complex heatmap* [@gu_com
 
 # Thanks
 
-I'd like to thank the scikit-Learn team in general for their amazing work [@scikit-learn;@sklearn_api] and also the *Stack Overflow* [@noauthor_stack_nodate] community and *Github* [@noauthor_github_nodate] for providing code repository.
+I'd like to thank the scikit-Learn team in general for their amazing work [@scikit-learn; @sklearn_api] and also the *Stack Overflow* [@noauthor_stack_nodate] community and *Github* [@noauthor_github_nodate] for providing code repository.
 
 # References
 
