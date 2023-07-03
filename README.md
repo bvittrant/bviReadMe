@@ -56,6 +56,10 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 
 - collapse all chunks possible : ctrl+k then ctrl+0
 
+### Jupyter notebook
+
+- Nice [tutorial](https://towardsdatascience.com/how-vscode-has-leaped-forward-as-jupyter-notebook-editor-29bb688ae382) about how to use and parametrise Jupyter notbook in VCS
+
 ## RStudio
 
 ### Creating section
