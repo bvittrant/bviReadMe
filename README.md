@@ -487,4 +487,8 @@ This book is nicely written and the open documentation is free. It regroups all 
 - [A tutorial on statistical-learning for scientific data processing](https://scikit-learn.org/stable/tutorial/statistical_inference/index.html)
 - (Statistical hypothesis tests](https://machinelearningmastery.com/statistical-hypothesis-tests-in-python-cheat-sheet/)
 
+## Methods summary
+
+I'm maintenaing some Notion table about methods [here](https://chief-authority-548.notion.site/22d8cd2bdf8a4763978fe808aadbc2ab?v=5772a09e10554cd7a405e7ef38535a77&pvs=4).
+
 # ![Alt text](src/img/end_img.svg) <a name="end"></a>
