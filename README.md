@@ -406,6 +406,25 @@ convert_cols_to_character <- function(df, colnames_to_convert) {
 }
 ```
 
+### Merge files into dataframes
+
+```
+mergeCSVFiles <- function(directory, sep) {
+  filepaths <- list.files(directory, pattern = "\\.csv$", full.names = TRUE)
+  merged_df <- NULL
+  
+  for (filepath in filepaths) {
+    df <- read.csv(filepath, sep = sep, header = T)
+    if (is.null(merged_df)) {
+      merged_df <- df
+    } else {
+      merged_df <- rbind(merged_df, df)
+    }
+  }
+  
+  return(merged_df)
+}
+```
 # ![Alt text](src/img/sql_img.svg) <a name="sql"></a>
 
 ## Insert variables from R/python into CH query
