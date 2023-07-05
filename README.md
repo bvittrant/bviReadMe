@@ -55,6 +55,7 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 ### shortcuts
 
 - collapse all chunks possible : ctrl+k then ctrl+0
+- multi-lines comment with # : ctrl+k then ctrl+c to comment or ctrl+k then ctrl+u to uncomment
 
 ### Jupyter notebook
 
@@ -425,6 +426,7 @@ mergeCSVFiles <- function(directory, sep) {
   return(merged_df)
 }
 ```
+
 # ![Alt text](src/img/sql_img.svg) <a name="sql"></a>
 
 ## Insert variables from R/python into CH query
