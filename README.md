@@ -84,7 +84,40 @@ Collapsing sections :
 
 # ![Alt text](src/img/python_img.svg) <a name="python"></a>
 
-## Manage paths
+## Data processing
+
+```
+def merge_csv_files(directory, sep):
+    """
+    This function merges all CSV files in a given directory into a single pandas DataFrame.
+    
+    Parameters:
+    directory (str): The directory where the CSV files are located.
+    sep (str): The delimiter used in the CSV files.
+
+    Returns:
+    DataFrame: A pandas DataFrame containing the merged data from all CSV files.
+    """
+    
+    # Get a list of all CSV file paths in the directory
+    filepaths = [os.path.join(directory, f) for f in os.listdir(directory) if f.endswith('.csv')]
+    
+    # Initialize an empty DataFrame to store the merged data
+    merged_df = pd.DataFrame()
+
+    # Loop through the list of filepaths and read each CSV file
+    for filepath in filepaths:
+        # Read the CSV file into a DataFrame
+        df = pd.read_csv(filepath, sep=sep)
+        
+        # Append the data from the current CSV file to the merged DataFrame
+        merged_df = pd.concat([merged_df, df])
+
+    # Return the merged DataFrame
+    return merged_df
+```
+
+## Libraries managing
 
 [How to import with direct path](https://docs.python.org/3/library/importlib.html#importing-a-source-file-directly)
 
