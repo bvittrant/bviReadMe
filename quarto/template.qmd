@@ -132,7 +132,7 @@ palette = "Paired"
 
 # Data collection and preprocessing
 
-In this part we will download the data from structured data model *Clickhouse* [@clickhouse_fast_nodate] with a homemade function.
+In this part we will download, process and store the data that will be used during our work.
 
 ```{r, message=F, warning=F}
 ```
