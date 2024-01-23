@@ -166,6 +166,22 @@ For the correlation analysis I used the pacakge *polycor* [@fox_polycor_2022, @n
 ```{r, message=F, warning=F}
 
 ```
+## Plot
+
+### Ribbons
+
+```{r}
+p_age = ggplot(data_summary_age) +
+  geom_line(aes(age, `50%`, colour = "50%")) + xlab("") + ylab("") +
+  ggtitle("(A)") + theme(legend.position = "None") +
+  geom_ribbon(aes(ymin=`25%`, ymax=`75%`, x=age, fill = "25% < median < 75%"), alpha = 0.3)+
+  geom_ribbon(aes(ymin=`10%`, ymax=`90%`, x=age, fill = "10% < median < 90%"), alpha = 0.1)+
+  scale_color_npg(name = "") +
+  scale_fill_npg(name="") +
+  geom_hline(yintercept=thresh_down, linetype="dashed", color = "darkred", linewidth=0.5) +
+  geom_hline(yintercept=thresh_up, linetype="dashed", color = "darkgreen", linewidth=0.5)
+p_age
+```
 
 ## Mutual information
 
