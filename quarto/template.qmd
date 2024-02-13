@@ -147,7 +147,26 @@ In this part I will download, process and store the data that will be used durin
 
 # Data descritpion
 
-In this part I will produce description table usable for publication. I used the gt table 
+In this part I will produce description table usable for publication. I used the gt table
+
+```{r, message=F, warning=F}
+#table_measures = gtsummary::tbl_summary(
+#  tmp, 
+#  #type = all_continuous() ~ "continuous2",
+#  statistic = list(all_continuous() ~ c("{mean} ({sd})"),  all_categorical() ~ "{n} ({p}%)"),
+#  #label  = list_labels,
+#  #missing = "no",
+#  missing_text = "Missing",
+#  by=Sex,
+#  digits = all_continuous() ~ 1
+#) %>% italicize_levels() %>% bold_labels() %>% add_overall() #%>% add_difference() # Possible if b has 2 levels
+
+#as_gt(table_measures)
+#as_gt(table_measures) %>% gt::gtsave(filename = paste(path_to_figure, "table_data_summary_measures.pdf", sep=""))
+#table_measures %>% gtsummary::as_tibble() %>%
+#writexl::write_xlsx(., paste(path_to_figure, "table_data_summary_measures.xlxs", sep=""))
+```
+
 # Exploration
 
 ## Distribution
