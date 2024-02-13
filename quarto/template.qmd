@@ -48,11 +48,15 @@ bibliography: references.bib
 
 ## Clean
 
+This small piece of code makes sure the env and all object are cleared before starting the work.
+
 ```{r, message=F, warning=F}
 rm(list = ls(all.names = TRUE))
 ```
 
 ## Functions
+
+In this part you can find some useful basic functions to process and analyse data.
 
 ```{r, message=F, warning=F}
 # Install load pkg
@@ -106,6 +110,8 @@ summary_quant = function(data){return(get_summary_stats(data, type="quantile", p
 
 ## Packages
 
+In this part I will install and load the needed packages for the work.
+
 ```{r, message=F, warning=F}
 
 list_pkg = c("BiocManager","ggsci", "plotly", "GGally", "reshape2","webshot2" ,"gtsummary", "tidyr", "polycor", "rstatix",
@@ -134,11 +140,14 @@ palette = "Paired"
 
 # Data collection and preprocessing
 
-In this part we will download, process and store the data that will be used during our work.
+In this part I will download, process and store the data that will be used during our work.
 
 ```{r, message=F, warning=F}
 ```
 
+# Data descritpion
+
+In this part I will produce description table usable for publication. I used the gt table 
 # Exploration
 
 ## Distribution
@@ -173,16 +182,16 @@ For the correlation analysis I used the pacakge *polycor* [@fox_polycor_2022, @n
 ### Ribbons
 
 ```{r}
-p_age = ggplot(data_summary_age) +
-  geom_line(aes(age, `50%`, colour = "50%")) + xlab("") + ylab("") +
-  ggtitle("(A)") + theme(legend.position = "None") +
-  geom_ribbon(aes(ymin=`25%`, ymax=`75%`, x=age, fill = "25% < median < 75%"), alpha = 0.3)+
-  geom_ribbon(aes(ymin=`10%`, ymax=`90%`, x=age, fill = "10% < median < 90%"), alpha = 0.1)+
-  scale_color_npg(name = "") +
-  scale_fill_npg(name="") +
-  geom_hline(yintercept=thresh_down, linetype="dashed", color = "darkred", linewidth=0.5) +
-  geom_hline(yintercept=thresh_up, linetype="dashed", color = "darkgreen", linewidth=0.5)
-p_age
+#p_age = ggplot(data_summary_age) +
+#  geom_line(aes(age, `50%`, colour = "50%")) + xlab("") + ylab("") +
+#  ggtitle("(A)") + theme(legend.position = "None") +
+#  geom_ribbon(aes(ymin=`25%`, ymax=`75%`, x=age, fill = "25% < median < 75%"), alpha = 0.3)+
+#  geom_ribbon(aes(ymin=`10%`, ymax=`90%`, x=age, fill = "10% < median < 90%"), alpha = 0.1)+
+#  scale_color_npg(name = "") +
+#  scale_fill_npg(name="") +
+#  geom_hline(yintercept=thresh_down, linetype="dashed", color = "darkred", linewidth=0.5) +
+#  geom_hline(yintercept=thresh_up, linetype="dashed", color = "darkgreen", linewidth=0.5)
+#p_age
 ```
 
 ## Mutual information
