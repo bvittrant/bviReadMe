@@ -138,6 +138,15 @@ continuous_ggsci_npg = list(scale_fill_material("light-blue"))
 palette = "Paired"
 ```
 
+## Paths
+
+Set some paths.
+
+```{r}
+path_to_figure = "Figures/"
+```
+
+
 # Data collection and preprocessing
 
 In this part I will download, process and store the data that will be used during our work. I also manage here if it is needed to re-run all the processing steps.
