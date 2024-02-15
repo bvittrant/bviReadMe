@@ -148,12 +148,12 @@ In this part I will download, process and store the data that will be used durin
 if(file.exists("../data/raw/internal/main.RData")){
   
   # Load data in R object if it exists
-  load("../data/raw/internal/main.RData")
+  base::load("../data/raw/internal/main.RData")
   
 } else {
   
   # YOUR STUFF leading to any data
-  
+
   # Save the data
   #resave(data file = "../data/raw/internal/main.RData")
   save(data, file = "../data/raw/internal/main.RData")
