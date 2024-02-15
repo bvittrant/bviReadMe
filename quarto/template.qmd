@@ -140,9 +140,24 @@ palette = "Paired"
 
 # Data collection and preprocessing
 
-In this part I will download, process and store the data that will be used during our work.
+In this part I will download, process and store the data that will be used during our work. I also manage here if it is needed to re-run all the processing steps.
 
 ```{r, message=F, warning=F}
+
+# Check if R object exists
+if(file.exists("../data/raw/internal/main.RData")){
+  
+  # Load data in R object if it exists
+  load("../data/raw/internal/main.RData")
+  
+} else {
+  
+  # YOUR STUFF leading to any data
+  
+  # Save the data
+  #resave(data file = "../data/raw/internal/main.RData")
+  save(data, file = "../data/raw/internal/main.RData")
+}
 ```
 
 # Data descritpion
