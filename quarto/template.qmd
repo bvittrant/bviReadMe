@@ -237,6 +237,22 @@ For the correlation analysis I used the pacakge *polycor* [@fox_polycor_2022, @n
 #p_age
 ```
 
+### Plot with statistics
+
+```{r}
+# Create data and specify the test we need
+#tab_res = compare_means(value ~ minute_floor_cat, method = "t.test",  data = na.omit(d))
+#my_comparisons <- list( c("0h-10h", "10h-19h"), c("10h-19h", "19h-24h"))
+                   
+#p_boxplot_minute_cat = ggplot(na.omit(d), aes(minute_floor_cat, value)) +
+#  geom_boxplot() + ylab("ESC") + xlab("") + labs(color='Time') +
+#  scale_color_npg() + 
+#  scale_y_continuous(name="", limits=c(0, 110), breaks=c(0, 25, 50, 75, 100)) +
+#  ylab("") + xlab("") + ggtitle("(A)") +
+#  stat_compare_means(comparisons = my_comparisons, method = "t.test", label.y = 101, label = "p.signif")
+#p_boxplot_minute_cat
+```
+
 ## Mutual information
 
 ```{r, message=F, warning=F}
