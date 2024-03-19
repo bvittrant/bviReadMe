@@ -162,6 +162,9 @@ if(file.exists("../data/raw/internal/main.RData")){
 } else {
   
   # YOUR STUFF leading to any data
+  #path = "../../dir/"
+  #file_names <- dir(path) #where you have your files
+  #data <- do.call(rbind, lapply(paste(path, file_names, sep=""), function(file) read.table(file, header=TRUE, sep=";")))
 
   # Save the data
   #resave(data file = "../data/raw/internal/main.RData")
