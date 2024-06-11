@@ -132,7 +132,7 @@ renv::init()
 
 We define color palette from the *ggsci* [@xiao__aut_ggsci_2023] that recreate color from scientific publication.
 
-```{r}
+```{r, message=F}
 discrete_ggsci_npg = list(scale_color_npg(), scale_fill_npg())
 continuous_ggsci_npg = list(scale_fill_material("light-blue"))
 palette = "Paired"
@@ -142,7 +142,7 @@ palette = "Paired"
 
 Set some paths.
 
-```{r}
+```{r, message=F}
 path_to_figure = "Figures/"
 ```
 
@@ -306,7 +306,7 @@ To plot the heat map I used the unbelieveable package *complex heatmap* [@gu_com
 ```{r, message=F, warning=F}
 ```
 
-# Conlcusion
+# Conclusion
 
 ```{r, message=F, warning=F}
 ```
@@ -316,14 +316,14 @@ To plot the heat map I used the unbelieveable package *complex heatmap* [@gu_com
 ```{r, message=F, warning=F}
 ```
 
-# Conclusion/Futur work
+# Futur work
 
 ```{r, message=F, warning=F}
 ```
 
 # Thanks
 
-I'd like to thank the scikit-Learn team in general for their amazing work [@scikit-learn; @sklearn_api] and also the *Stack Overflow* [@noauthor_stack_nodate] community and *Github* [@noauthor_github_nodate] for providing code repository.
+I'd like to thank the scikit-Learn team in general for their amazing work [@pedregosa_scikit-learn_2011; @buitinck_api_2013] and also the *Stack Overflow* [@noauthor_stack_nodate] community and *Github* [@noauthor_github_nodate] for providing code repository.
 
 # References
 
