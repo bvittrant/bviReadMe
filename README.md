@@ -32,6 +32,12 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 
 # ![](src/img/ubuntu_img.svg) <a name="Ubuntu"></a>
 
+## Encryption
+
+For ubuntu and affiliated system you can use cryptsetup to manage encryption and any drive (internal or external). For example if you want to mount an encrypted HDD you can do :
+
+``` cryptsetup luksOpen /dev/<your block device> ```
+
 # ![](src/img/markdown_img.svg) <a name="markdown"></a>
 
 ## Tips
