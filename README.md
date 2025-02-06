@@ -12,6 +12,7 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 # Table of content
 
 - [Not So Random Things](#nsrt)
+- [Ubuntu](#Ubuntu)
 - [Markdown](#markdown)
 - [Integrated Development Environnement (IDE)](#ide)
 - [Python](#python)
@@ -28,6 +29,8 @@ Feel free to use or modify and reshare it but cite the github page if you do and
 ## Work organisation
 
 - [Data team handbook (jobs and organisation)](https://about.gitlab.com/handbook/business-technology/data-team/)
+
+# ![](src/img/ubuntu_img.svg) <a name="Ubuntu"></a>
 
 # ![](src/img/markdown_img.svg) <a name="markdown"></a>
 
